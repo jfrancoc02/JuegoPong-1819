@@ -158,12 +158,12 @@ public class PantallaJuegoCPU implements Pantalla {
 				(int) (panelJuego.getBounds().getCenterX() - 50), 50);
 		marcador2.drawString(Integer.toString(pelota.getPuntuacion2()),
 				(int) (panelJuego.getBounds().getCenterX() + 25), 50);
-		if (pelota.getPuntuacion1() == 1) {
+		if (pelota.getPuntuacion1() == 7) {
 			PantallaGameOver2 pantallaJuego = new PantallaGameOver2(panelJuego, tiempoDeJuego);
 			pantallaJuego.inicializarPantalla();
 			panelJuego.setPantallaActual(pantallaJuego);
 		}
-		if (pelota.getPuntuacion2() == 1) {
+		if (pelota.getPuntuacion2() == 7) {
 			PantallaGameOver3 pantallaJuego = new PantallaGameOver3(panelJuego, tiempoDeJuego);
 			pantallaJuego.inicializarPantalla();
 			panelJuego.setPantallaActual(pantallaJuego);
